@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>multi language test</title>
+</head>
+<body>
+    <span th:text="#{home.welcome}"></span>
+
+    <ul>
+        <li><a href="?lang=en" data-th-text="#{home.lang.en}"></a></li>
+        <li><a href="?lang=ko" data-th-text="#{home.lang.ko}"></a></li>
+        <li><a href="?lang=es" data-th-text="#{home.lang.es}"></a></li>
+    </ul>
+</body>
+</html>
